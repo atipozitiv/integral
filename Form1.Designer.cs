@@ -39,6 +39,7 @@
       this.checkBox2 = new System.Windows.Forms.CheckBox();
       this.checkBox3 = new System.Windows.Forms.CheckBox();
       this.label2 = new System.Windows.Forms.Label();
+      this.textBox5 = new System.Windows.Forms.TextBox();
       ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
@@ -48,9 +49,10 @@
       this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.label1.Location = new System.Drawing.Point(12, 19);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(224, 164);
+      this.label1.Size = new System.Drawing.Size(251, 229);
       this.label1.TabIndex = 0;
-      this.label1.Text = "Функция:\r\n\r\nНачало интервала:\r\n\r\nКонец интервала:\r\n\r\nТочность:\r\n\r\n";
+      this.label1.Text = "Функция:\r\n\r\nНачало интервала:\r\n\r\nКонец интервала:\r\n\r\nТочность:\r\n\r\nКоличество разб" +
+    "иений:";
       // 
       // textBox1
       // 
@@ -175,11 +177,19 @@
       this.label2.Size = new System.Drawing.Size(0, 20);
       this.label2.TabIndex = 10;
       // 
+      // textBox5
+      // 
+      this.textBox5.Location = new System.Drawing.Point(242, 197);
+      this.textBox5.Name = "textBox5";
+      this.textBox5.Size = new System.Drawing.Size(116, 22);
+      this.textBox5.TabIndex = 11;
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1286, 573);
+      this.Controls.Add(this.textBox5);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.checkBox3);
       this.Controls.Add(this.checkBox2);
@@ -193,6 +203,7 @@
       this.Controls.Add(this.menuStrip1);
       this.Name = "Form1";
       this.Text = "Form1";
+      this.Load += new System.EventHandler(this.Form1_Load);
       ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
       this.menuStrip1.ResumeLayout(false);
       this.menuStrip1.PerformLayout();
@@ -217,6 +228,7 @@
     private System.Windows.Forms.CheckBox checkBox2;
     private System.Windows.Forms.CheckBox checkBox3;
     private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.TextBox textBox5;
   }
 }
 
